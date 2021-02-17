@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">To Do List</string>
+    <string name="taskNum">You have X tasks</string>
+    <string name="upcoming">Upcoming Tasks</string>
+    <string name="taskName">TaskName</string>
+    <string name="taskDate">TaskDate</string>
+    <string name="taskP">TaskPriority</string>
+    <string name="viewTasksButton">View Tasks</string>
+    <string name="createTasksButton">Create A Task</string>
+    <string name="select_task">Select Task</string>
+    <string name="cancel">Cancel</string>
+    <string name="taskInfoView">Task Information</string>
+    <string name="name"> </string>
+    <string name="taskNameView">Name:</string>
+    <string name="taskDateView">Date:</string>
+    <string name="date">TaskDate</string>
+    <string name="taskPView">"Priority: "</string>
+    <string name="priority">priority</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="deleteButton">Delete</string>
+    <string name="textViewName">Name:</string>
+    <string name="taskNameEdit"></string>
+    <string name="taskNameHint">Task Name</string>
+    <string name="textViewDate">Date:</string>
+    <string name="setDateButton">Set Date</string>
+    <string name="textViewP">Priority:</string>
+    <string name="High">High</string>
+    <string name="Medium">Medium</string>
+    <string name="Low">Low</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="sumbitButton">Submit</string>
+    <string name="dateSet"></string>
+</resources>

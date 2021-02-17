@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/billTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/billTotalLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipPercentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tipPercentLabel"
+        app:layout_constraintStart_toStartOf="@+id/billTotalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/billTotal" />
+
+    <TextView
+        android:id="@+id/customLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customLabel"
+        app:layout_constraintStart_toStartOf="@+id/billTotalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/percentGroup" />
+
+    <TextView
+        android:id="@+id/tipTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipTotal"
+        app:layout_constraintBottom_toBottomOf="@+id/tipTotalLabel"
+        app:layout_constraintStart_toStartOf="@+id/billTotal" />
+
+    <TextView
+        android:id="@+id/percentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percentLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/percent"
+        app:layout_constraintEnd_toEndOf="@+id/billTotal" />
+
+    <TextView
+        android:id="@+id/tipTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tipTotalLabel"
+        app:layout_constraintStart_toStartOf="@+id/billTotalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/customLabel" />
+
+    <TextView
+        android:id="@+id/finalTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finalTotal"
+        app:layout_constraintBottom_toBottomOf="@+id/finalTotalLabel"
+        app:layout_constraintStart_toStartOf="@+id/billTotal" />
+
+    <TextView
+        android:id="@+id/finalTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/finalTotalLabel"
+        app:layout_constraintStart_toStartOf="@+id/billTotalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tipTotalLabel" />
+
+    <RadioGroup
+        android:id="@+id/percentGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checkedButton="@id/tenPercent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tipPercentLabel"
+        app:layout_constraintStart_toStartOf="@+id/billTotal"
+        app:layout_constraintTop_toBottomOf="@+id/billTotal">
+
+        <RadioButton
+            android:id="@+id/tenPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tenPercent" />
+
+        <RadioButton
+            android:id="@+id/fifteenPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fifteenPercent" />
+
+        <RadioButton
+            android:id="@+id/eighteenPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eighteenPercent" />
+
+        <RadioButton
+            android:id="@+id/customPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customPercent" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/percent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:progress="20"
+        app:layout_constraintBottom_toBottomOf="@+id/customLabel"
+        app:layout_constraintEnd_toStartOf="@+id/percentLabel"
+        app:layout_constraintStart_toStartOf="@+id/billTotal" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/exitLabel"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/billTotal"
+        app:layout_constraintStart_toStartOf="@+id/billTotalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/finalTotal" />
+
+    <EditText
+        android:id="@+id/billTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="@string/billHint"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toEndOf="@+id/billTotalLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

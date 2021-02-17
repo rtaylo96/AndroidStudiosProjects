@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">In Class 3</string>
+    <string name="textName">Name:</string>
+    <string name="name" />
+    <string name="enter_name">Enter Name</string>
+    <string name="textEmail">Email:</string>
+    <string name="email" />
+    <string name="enter_email">Enter Email</string>
+    <string name="textID">ID:</string>
+    <string name="id" />
+    <string name="enter_id">Enter ID</string>
+    <string name="textDept">Dept:</string>
+    <string name="buttonSelect">Select</string>
+    <string name="buttonSubmit">Submit</string>
+    <string name="compSci">Computer Science</string>
+    <string name="sIS">Software Info. Systems</string>
+    <string name="bInfo">Bio. Informatics</string>
+    <string name="dS">Data Science</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="buttonConfirm">Select</string>
+    <string name="dept" />
+    <string name="holdEmail" />
+    <string name="holdName" />
+    <string name="holdId" />
+    <string name="holdDept" />
+</resources>
